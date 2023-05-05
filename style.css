@@ -43,7 +43,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color:rgb(165, 167, 167);
-    align-items: center;
     justify-content: center;
     align-self: flex-end;
 }
