@@ -44,5 +44,6 @@ footer {
     flex-direction: column;
     background-color:rgb(165, 167, 167);
     align-items: center;
-    justify-content: center;
+    justify-content: flex end;
+    
 }
