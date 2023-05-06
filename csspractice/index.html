@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css box</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      a {
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        text-decoration: none;
+      }
+      .flex {
+        display: flex;
+      }
+      .white {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .row-end {
+        justify-content: end;
+      }
+      .column-end {
+        align-items: flex-end;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgr16 {
+        margin-right: 16px;
+      }
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .shadow {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--Side box-->
+    <div class="white shadow" style="width: 200px; z-index: 2">
+      <!--Logo box-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+          width="60px"
+          height="30px"
+        />
+        <div>
+          <p>Kenny</p>
+        </div>
+      </div>
+      <!--Intro box-->
+    </div>
+    <!--Main box-->
+    <div class="flex1 flex column">
+      <!--header box-->
+      <div
+        style="height: 60px; z-index: 1; align-items: center"
+        class="flex row-end white shadow"
+      >
+        <!--items-->
+        <a href=""
+          ><img
+            src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+            width="100px"
+            height="50px"
+            style="margin-right: 1100px"
+        /></a>
+        <a href="" class="mgr16">items1</a>
+        <a href="" class="mgr16">items2</a>
+        <a href="" class="mgr16">items3</a>
+        <a href="" class="mgr16">items4</a>
+        <a href="" class="mgr16">items5</a>
+      </div>
+      <!--content box-->
+      <div style="overflow: auto" class="flex1 flex">
+        <!--left box-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--Dataset box-->
+          <div class="flex">
+            <!--Data1-->
+            <div style="height: 100px" class="flex1 white mgr8 shadow"></div>
+            <div style="height: 100px" class="flex1 white mgr8 shadow"></div>
+            <div style="height: 100px" class="flex1 white mgr8 shadow"></div>
+            <div style="height: 100px" class="flex1 white shadow"></div>
+          </div>
+          <!--List box-->
+          <div class="flex column">
+            <!--list1-->
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+            <div style="height: 160px" class="white mgt8 shadow"></div>
+          </div>
+        </div>
+        <!--right box-->
+        <div style="flex: 1" class="flex column mgt8 mgr8">
+          <!--Hint box-->
+          <div style="height: 150px" class="white shadow"></div>
+          <!--News box-->
+          <div style="height: 300px" class="white mgt8 shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
